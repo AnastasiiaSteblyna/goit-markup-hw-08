@@ -1,0 +1,61 @@
+.footer__form {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.footer__form--caption {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-bg-color;
+}
+
+.footer__input {
+  margin: 0;
+  padding: 15px 16px 15px 16px;
+  width: 358px;
+
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: $main-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer__submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 12px;
+  padding: 10px 29px;
+
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  color: $main-bg-color;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(24, 140, 232, 1);
+  }
+}
+
+.submit-button__icon {
+  margin-left: 10px;
+  fill: $main-bg-color;
+}
