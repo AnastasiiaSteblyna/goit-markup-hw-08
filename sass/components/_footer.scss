@@ -5,9 +5,14 @@
 }
 
 .footer__section {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
 }
 
 .footer__contacts {
@@ -26,9 +31,23 @@
   }
 }
 
+.footer__list {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 .footer__list > li:not(:last-child) {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__address {

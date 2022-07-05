@@ -1,11 +1,19 @@
 .footer__form {
   display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: auto;
+  }
 }
 
 .footer__form--caption {
   margin-bottom: 20px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 14px;
@@ -13,12 +21,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-bg-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__input {
   margin: 0;
   padding: 15px 16px 15px 16px;
-  width: 358px;
+  width: calc(100vw - 30px);
 
   background-color: transparent;
   outline: transparent;
@@ -26,6 +38,13 @@
   border-radius: 4px;
   color: $main-bg-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer__submit-button {
@@ -33,6 +52,7 @@
   align-items: center;
   justify-content: center;
 
+  margin-top: 20px;
   margin-left: 12px;
   padding: 10px 29px;
 
@@ -52,6 +72,10 @@
   &:hover,
   &:focus {
     background-color: rgba(24, 140, 232, 1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
   }
 }
 
