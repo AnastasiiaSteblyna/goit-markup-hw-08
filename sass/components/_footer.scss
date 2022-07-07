@@ -6,12 +6,20 @@
 
 .footer__section {
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
   }
 }
 
