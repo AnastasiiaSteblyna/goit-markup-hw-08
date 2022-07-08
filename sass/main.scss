@@ -1,19 +1,20 @@
 @import './utils/variables';
 @import './utils/general';
 
-@import './components/socials';
-@import './components/logo';
+@import './utils/socials';
+@import './utils/logo';
 
-@import './components/header';
-@import './components/header-modal';
-@import './components/hat-section';
-@import './components/description-section';
-@import './components/examples-section';
-@import './components/team-section';
-@import './components/client-section';
-@import './components/footer';
-@import './components/footer-form';
-@import './components/modal';
-@import './components/modal-form';
-@import './components/portfolio';
-@import './components/portfolio-gallery';
+@import './components/header/header';
+@import './components/header/header-modal';
+@import './components/main-index/hat-section';
+@import './components/main-index/description-section';
+@import './components/main-index/examples-section';
+@import './components/main-index/team-section';
+@import './components/main-index/client-section';
+@import './components/footer/footer';
+@import './components/footer/footer-form';
+@import './components/modals/modal';
+@import './components/modals/modal-form';
+
+@import './components/main-portfolio/portfolio';
+@import './components/main-portfolio/portfolio-gallery';
