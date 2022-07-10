@@ -1,20 +1,52 @@
 .hat {
-  height: 600px;
-  max-width: 1600px;
   margin: 0 auto;
-  background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%), url(../images/hat-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 480px;
+  height: 400px;
 
   &--position {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+    url(/images/mobile/background-mob@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2f303a;
+
+  @include ratio-2x {
+    background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+      url(/images/mobile/background-mob@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+      url(/images/tablet/background-tab.jpg);
+
+    @include ratio-2x {
+      background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+        url(/images/tablet/background-tab@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+      url(/images/desktop/hat-background.jpg);
+
+    @include ratio-2x {
+      background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+        url(/images/desktop/background@2x.jpg);
+    }
+  }
 }
+
+// padding-top: 200px;
+// padding-bottom: 200px;
 
 .hat__title {
   display: inline-block;
