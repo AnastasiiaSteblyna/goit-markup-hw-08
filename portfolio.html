@@ -43,7 +43,7 @@
           <li>
             <a class="contacts-list__item" href="mailto:info@devstudio.com">
               <svg class="contacts-list__icon--mail" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelop"></use>
+                <use href="./images/svg/icons.svg#icon-envelop"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -51,7 +51,7 @@
           <li>
             <a class="contacts-list__item" href="tel:+380961111111">
               <svg class="contacts-list__icon--phone" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphon"></use>
+                <use href="./images/svg/icons.svg#icon-smartphon"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -59,7 +59,7 @@
         </ul>
         <button class="header__button" type="button" data-mobile-open>
           <svg class="header-button__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-burger"></use>
+            <use href="./images/svg/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
@@ -80,7 +80,36 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__link--wrap">
-                  <img src="./images/technocryak.jpg" alt="Технокряк" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/techno-mob.jpg    450w,
+                        ./images/mobile/techno-mob@2x.jpg 900w
+                      "
+                      sizes="450px"
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tablet/techno-tab.jpg    354w,
+                        ./images/tablet/techno-tab@2x.jpg 708w
+                      "
+                      sizes="354px"
+                      media="(max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/desktop/technocryak.jpg    370w,
+                        ./images/desktop/technocryak@2x.jpg 740w
+                      "
+                      sizes="370px"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img src="./images/desktop/technocryak.jpg " alt="Технокряк" />
+                  </picture>
                   <p class="gallery__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -248,28 +277,28 @@
             <li class="soc-links__item">
               <a href="" class="soc-link__link soc-link__link--footer-colors">
                 <svg class="soc-link__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-links__item">
               <a href="" class="soc-link__link soc-link__link--footer-colors">
                 <svg class="soc-link__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-links__item">
               <a href="" class="soc-link__link soc-link__link--footer-colors">
                 <svg class="soc-link__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-fb"></use>
+                  <use href="./images/svg/icons.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-links__item">
               <a href="" class="soc-link__link soc-link__link--footer-colors">
                 <svg class="soc-link__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -290,7 +319,7 @@
           <button type="submit" class="footer__submit-button">
             Подписаться
             <svg class="submit-button__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
+              <use href="./images/svg/icons.svg#icon-icon-send"></use>
             </svg>
           </button>
         </form>
@@ -302,7 +331,7 @@
     <div class="mobile is-hidden" data-mobile>
       <button class="mobile__close-button" data-mobile-close>
         <svg width="40" height="40">
-          <use href="./images/icons.svg#icon-header-close"></use>
+          <use href="./images/svg/icons.svg#icon-header-close"></use>
         </svg>
       </button>
       <ul class="mobile__nav">
