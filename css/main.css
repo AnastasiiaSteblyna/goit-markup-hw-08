@@ -611,6 +611,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hat--position {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hat {
@@ -647,20 +655,27 @@ header {
 }
 
 .hat__title {
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hat__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .hat__button {
-  display: inline-block;
+  display: block;
   padding: 10px 32px;
   min-width: 200px;
   border: 0px;
@@ -755,22 +770,22 @@ header {
 }
 
 .description__item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(/images/svg/antenna.svg);
   background-size: 70px;
 }
 
 .description__item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(/images/svg/clock.svg);
   background-size: 70px;
 }
 
 .description__item:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(/images/svg/diagram.svg);
   background-size: 70px;
 }
 
 .description__item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(/images/svg/astronaut.svg);
   background-size: 70px;
 }
 

@@ -7,6 +7,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
 
   background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
@@ -16,7 +23,7 @@
   background-repeat: no-repeat;
   background-color: #2f303a;
 
-  @include ratio-2x {
+  @include retina {
     background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
       url(/images/mobile/background-mob@2x.jpg);
   }
@@ -26,7 +33,7 @@
     background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
       url(/images/tablet/background-tab.jpg);
 
-    @include ratio-2x {
+    @include retina {
       background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
         url(/images/tablet/background-tab@2x.jpg);
     }
@@ -38,32 +45,36 @@
     background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
       url(/images/desktop/hat-background.jpg);
 
-    @include ratio-2x {
+    @include retina {
       background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
         url(/images/desktop/background@2x.jpg);
     }
   }
 }
 
-// padding-top: 200px;
-// padding-bottom: 200px;
-
 .hat__title {
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
 
   color: $main-bg-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hat__button {
-  display: inline-block;
+  display: block;
   padding: 10px 32px;
   min-width: 200px;
 
