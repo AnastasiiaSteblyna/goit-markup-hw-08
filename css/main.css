@@ -1455,7 +1455,7 @@ header {
   background-origin: border-box;
   border: 2px solid #2196f3;
   background-color: #2196f3;
-  background-image: url(../images/iconcheck.svg);
+  background-image: url(/images/svg/iconcheck.svg);
 }
 .check__input--hidden:hover + .check__icon {
   border-color: rgb(24, 140, 232);
