@@ -12,12 +12,9 @@
 .team__caption {
   margin-bottom: 30px;
 
-  color: $main-text-color;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1;
   text-align: center;
-  letter-spacing: 0.03em;
+  @include text-properties(700, 28px, 1, 0.03em);
+  color: $main-text-color;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -56,20 +53,15 @@
   margin-top: 30px;
   margin-bottom: 10px;
 
-  color: $main-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
   text-align: center;
-  letter-spacing: 0.03em;
+  @include text-properties(500, 16px, 1, 0.03em);
+  color: $main-text-color;
 }
 
 .team-item__text {
   margin-bottom: 16px;
 
-  color: $second-text-color;
-  font-size: 16px;
-  line-height: 1;
   text-align: center;
-  letter-spacing: 0.03em;
+  @include text-properties(null, 14px, 1, 0.03em);
+  color: $second-text-color;
 }

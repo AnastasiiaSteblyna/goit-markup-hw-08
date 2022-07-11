@@ -14,11 +14,7 @@
 .footer__form--caption {
   margin-bottom: 20px;
   text-align: center;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include text-properties(700, 14px, 1.33, 0.03em);
   text-transform: uppercase;
   color: $main-bg-color;
 
@@ -57,13 +53,10 @@
   margin-left: 12px;
   padding: 10px 29px;
 
+  @include text-properties(700, 16px, 1.88, 0.06em);
   border-style: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   background-color: $accent-color;
   color: $main-bg-color;
   cursor: pointer;

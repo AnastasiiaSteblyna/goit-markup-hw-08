@@ -25,9 +25,7 @@
 
 .footer__contacts {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include text-properties(null, 14px, 1.71, 0.03em);
   font-style: normal;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,9 +58,7 @@
 
 .footer__address {
   color: #ffffff;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include text-properties(null, 14px, 1.71, 0.03em);
   font-style: normal;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -33,18 +33,13 @@
 }
 
 .gallery__title {
+  @include text-properties(700, 18px, 2, 0.06em);
   color: $main-text-color;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 .gallery__text {
+  @include text-properties(null, 16px, 1.88, 0.03em);
   color: $second-text-color;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 .gallery__border {
@@ -74,9 +69,7 @@
   height: 100%;
   padding: 63px 24px 63px 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include text-properties(null, 18px, 1.56, 0.03em);
   color: $main-bg-color;
   background-color: rgba(33, 150, 243, 0.9);
 

@@ -1,10 +1,7 @@
 .form__caption {
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
   text-align: center;
-  letter-spacing: 0.03em;
+  @include text-properties(700, 20px, 1.5, 0.03em);
   color: $main-text-color;
 
   @media screen and (min-width: 1200px) {
@@ -27,9 +24,8 @@
 .form__label--style {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+
+  @include text-properties(null, 12px, 1.17, 0.01em);
   color: $second-text-color;
 }
 
@@ -79,9 +75,7 @@
 }
 
 .form__field textarea::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  @include text-properties(null, 12px, 1.17, 0.01em);
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -109,9 +103,8 @@
 
   padding-left: 23px;
   cursor: pointer;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 0.03em;
+
+  @include text-properties(null, 12px, 1, 0.03em);
   color: $second-text-color;
 
   @media screen and (min-width: 1200px) {
@@ -161,15 +154,13 @@
   align-items: center;
   padding: 10px 55px;
   margin: 0 auto;
+
   border-style: none;
   border-radius: 4px;
-  font-weight: 700;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  background-color: $accent-color;
+  @include text-properties(700, 16px, 1.88, 0.06em);
   color: $main-bg-color;
 
   cursor: pointer;
