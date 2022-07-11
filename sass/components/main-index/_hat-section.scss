@@ -17,7 +17,7 @@
   }
 
   background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
-    url(../images/mobile/background-mob@1x.jpg);
+    url(../../images/mobile/background-mob@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,17 +25,17 @@
 
   @include retina {
     background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
-      url(../../../images/mobile/background-mob@2x.jpg);
+      url(../../images/mobile/background-mob@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
     background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
-      url(../../../images/tablet/background-tab.jpg);
+      url(../../images/tablet/background-tab.jpg);
 
     @include retina {
       background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
-        url(../../../images/tablet/background-tab@2x.jpg);
+        url(../../images/tablet/background-tab@2x.jpg);
     }
   }
 
@@ -43,11 +43,11 @@
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
-      url(../../../images/desktop/hat-background.jpg);
+      url(../../images/desktop/hat-background.jpg);
 
     @include retina {
       background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
-        url(../../../images/desktop/background@2x.jpg);
+        url(../../images/desktop/background@2x.jpg);
     }
   }
 }
