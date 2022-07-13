@@ -483,6 +483,9 @@ header {
 .mobile-nav__link:hover, .mobile-nav__link:focus {
   color: #2196f3;
 }
+.mobile-nav__link--current {
+  color: #2196f3;
+}
 
 .mobile__contacts {
   margin-left: 25px;
@@ -1456,7 +1459,7 @@ header {
   background-origin: border-box;
   border: 2px solid #2196f3;
   background-color: #2196f3;
-  background-image: url(/images/svg/iconcheck.svg);
+  background-image: url(../images/svg/iconcheck.svg);
 }
 .check__input--hidden:hover + .check__icon {
   border-color: rgb(24, 140, 232);

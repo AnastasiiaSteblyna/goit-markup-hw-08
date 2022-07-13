@@ -89,6 +89,10 @@
   &:focus {
     color: $accent-color;
   }
+
+  &--current {
+    color: $accent-color;
+  }
 }
 
 .mobile__contacts {
